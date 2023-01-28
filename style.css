@@ -1,0 +1,153 @@
+/* Adding fornts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+
+/* Making nav bar look good first */
+body{
+    background-color: antiquewhite;
+}
+
+
+*{
+    margin: 0;    /* Type m0 */    
+    padding: 0;   /* Type p0 */   
+}
+
+
+nav{
+    font-family: 'Ubuntu' , sans-serif ;
+}
+
+
+nav ul{
+    display: flex;
+    /* Using display flex our ul items (Home, About) will get into horizontally */
+
+    align-items: center;
+    /* Align ul item in center (not up not down) */
+
+    list-style-type: none;
+    /* list bullets will get removed */
+
+    height: 65px;
+    /* Changing nav bar height */
+
+    background-color: black;
+    /* but how do we know that nav bar height has changed or not, we will change background color obviously so that we will know about nav bar height */
+
+    color: white;
+    /* This will change the colour of the text of Spotify written on right of Spotify Logo */
+
+    cursor: pointer;
+}
+
+
+/* To change image of spotify we will target brand class, targeting image that is inside brand */
+.brand img{
+    width: 44px;
+    padding: 0 8px; /* Using padding between Spotify image and Spotify text so that it looks CLEAN */
+}
+
+
+/* Spotify Text is not in alignment with ul items (Home, About)
+ so to make it in alignment we have to seperately align it in center 
+ and using diplay flex and align center we can make the text become horizontally align in center*/
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+
+/* Now we have to make space between the text between ul-li items in the navigation bar so we will use padding*/
+nav ul li{
+    padding: 0 12px;
+}
+
+
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    color: white;
+    bottom: 0; 
+    /* after doing bottom 0 our black patti does not goes down because we have to set our container min height.  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    /* using flex direction column our icons will come just below the range slider */
+ }
+
+
+ .icons{
+    margin: 14px 0px;
+    /* margin of play icons is 12px from top-bottom and 0px from left-right */
+ }
+
+
+ /* making our cursor pointer on icons(like play buttons) */
+ .icons i{
+    cursor: pointer;
+ }
+
+
+/* Container is basically a black box in which Best of NCS - No Copyright Sounds is written */
+.container{
+    min-height: 65vh;
+    background-color: black;  /* Making whole webpage black */
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;   
+    margin:15px auto;
+    width: 70%;
+    border-radius: 10px; /* using border radius there will be light curves on vertexes */
+    padding: 30px;
+    background-image: url('bg.jpg'); /*On cover of the container our background image will be appeared */ 
+    background-position: center; /* Using this our background cover of a girl will come in center*/
+
+}
+
+
+#myProgressBar{
+    width: 80vw;
+    text-align: center; /* Text Align center wont work in Range slider*/
+    color: azure;
+    cursor: pointer;
+}
+
+
+
+/* Now we will write some CSS for songItems */
+.songItem{
+    height: 30px;
+    display: flex; /* Display flex so that song name, cover photo of that song and play button will come horizontally in  same line*/
+    background-color: white;
+    width: 80%;
+    color: black;
+    margin:12px 0 ;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+
+ /* Now we will write some CSS for songItems image */
+.songItem img{
+    height: 80%;
+    margin: 0 13px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 42px;
+}
+
