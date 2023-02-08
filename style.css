@@ -151,3 +151,15 @@ nav ul li{
     margin-top: 42px;
 }
 
+.songInfo{
+    position: absolute;
+    left: 9.5vw;  /* The full form of VW is viewport width. It works like the percentage unit. Specifying 10vw is equivalent to occupying 10% of entire visible screen width. */
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;  /* The opacity property specifies the opacity/transparency of an element. */
+    transition: opacity 1s ease-in;
+
+}
+
