@@ -67,6 +67,7 @@ nav ul li{
 }
 
 
+
 .bottom{
     position: sticky;
     height: 130px;
@@ -159,7 +160,7 @@ nav ul li{
 
 .songInfo img{
     opacity: 0;  /* The opacity property specifies the opacity/transparency of an element. */
-    transition: opacity 1s ease-in;
+    transition: opacity 0.4s ease-in;
 
 }
 
